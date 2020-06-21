@@ -8734,12 +8734,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1048016633}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1051601638 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1051601638, guid: b86667cab7298504b9034a7fdefbe662,
-    type: 3}
-  m_PrefabInstance: {fileID: 6004949670669521503}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1056233465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9359,6 +9353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1146797127}
   - component: {fileID: 1146797126}
+  - component: {fileID: 1146797128}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -9397,6 +9392,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146797128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146797125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f5c3d001ffca6479cdf40832ee6a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardTurretPrefab: {fileID: 2338547977458014757, guid: b86667cab7298504b9034a7fdefbe662,
+    type: 3}
 --- !u!1001 &1163538569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16440,12 +16449,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1886523490}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1886919085 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4712885644807495172, guid: b86667cab7298504b9034a7fdefbe662,
-    type: 3}
-  m_PrefabInstance: {fileID: 6004949670669521503}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1903813819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18848,18 +18851,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1051601638, guid: b86667cab7298504b9034a7fdefbe662, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1051601638, guid: b86667cab7298504b9034a7fdefbe662, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1051601638, guid: b86667cab7298504b9034a7fdefbe662, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
     - target: {fileID: 1598612005223213110, guid: b86667cab7298504b9034a7fdefbe662,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18991,31 +18982,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca2cfc200614a0743b88ae1fb4175bbf, type: 3}
---- !u!1 &8296172667888519290 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2338547977458014757, guid: b86667cab7298504b9034a7fdefbe662,
-    type: 3}
-  m_PrefabInstance: {fileID: 6004949670669521503}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8296172667888519291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8296172667888519290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ae09e1705a8324ca6c4108a8ee5e2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 15
-  fireRate: 1
-  rotationSpeed: 10
-  RotationPoint: {fileID: 1051601638}
-  bulletPrefab: {fileID: 3160266122169409400, guid: 544eaf15e69c1f143b6060f18ef6429c,
-    type: 3}
-  firePoint: {fileID: 1886919085}
 --- !u!1001 &8821058274176676431
 PrefabInstance:
   m_ObjectHideFlags: 0
