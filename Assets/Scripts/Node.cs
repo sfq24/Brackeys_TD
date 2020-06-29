@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.XR.WSA.Input;
 
 public class Node : MonoBehaviour
@@ -10,15 +11,26 @@ public class Node : MonoBehaviour
     private Color startColor;
     public Vector3 offset;
     private GameObject turret;
+    BuildManager buildManager;
 
     private void Start()
     {
         render = GetComponent<Renderer>();
         startColor = render.material.color;
+
+        buildManager = BuildManager.instance;
     }
 
     private void OnMouseEnter()
     {
+        if (EventSystem.current.IsPointerOverGameObject())           //检查是否指针在UI上
+        {
+            return;
+        }
+        if (buildManager.GetTurretToBuild() == null)
+        {
+            return;
+        }
         render.material.color = hoverColor;
     }
 
@@ -28,6 +40,10 @@ public class Node : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        if(buildManager.GetTurretToBuild() == null)
+        {
+            return;
+        }
         if(turret!= null)
         {
             Debug.Log("Already has a turret");
